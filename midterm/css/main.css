@@ -48,3 +48,163 @@ table {
 }
 
 /* ====== My CSS ====== */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: #aad4cf;
+}
+
+.wrapper {
+	max-width: 1210px;
+	margin: 0 auto;
+	padding: 0 20px;
+	background-color: #d4e9e7;
+}
+
+.bg-image {
+	width: 100%;
+	display: block;
+}
+
+h1 {
+	font-size: 70px;
+	color: aliceblue;
+}
+
+h2 {
+	font-size: 37px;
+	padding-top: 3%;
+	padding-bottom: 1%;
+}
+
+h3 {
+	font-size: 27px;
+}
+
+header {
+	position: relative;
+	height: 63vh;
+	padding: 0 10%;
+}
+
+header h1 {
+	position: absolute;
+	top: 59%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.bg-image {
+	display: block;
+	margin: auto;
+	height: auto;
+}
+
+.nav {
+	margin-bottom: 0%;
+}
+
+nav ul {
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 30px;
+	display: float;
+  	justify-content: space-between;
+}
+
+
+nav ul li {
+	padding: 20px 0;
+	display: inline-block;
+	width: calc(100% / 3.05);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav ul li:not(:first-child) {
+	border-left: 1px solid #00000070;
+	padding-left: 50px;
+}
+
+.cropped {
+	width: 275px;
+	height: 275px;
+	float: left;
+	padding-right: 20px;
+	padding-bottom: 30px;
+  }
+
+article p {
+	line-height: 1.5;
+	font-size: 17px;
+}
+
+#story {
+	margin-top: .5%;
+}
+
+.facts, h3 {
+	padding-top: 15px;
+	padding-bottom: 10px;
+}
+
+.facts ul {
+	padding-top: 10px;
+	padding-left: 15px;
+	margin-bottom: 0%;
+	list-style: initial;
+	font-size: 17px;
+}
+
+#contact-section form {
+	background-color: #d4e9e7;
+	padding: 15px;
+	line-height: 2;
+	border: 1px solid black;
+}
+
+#contact-section h3 {
+	margin-top: 0%;
+}
+
+.contact-form .name input,
+.contact-form .email input {
+    width: 100%;
+    padding: 6px;
+	margin-bottom: 7px;
+}
+
+.contact-form .message textarea {
+	width: 100%;
+	padding: 10px;
+	height: 100px;
+	resize: none;
+}
+
+button, input[type="submit"] {
+	background-color: #4caf4f00; /* Green background */
+    color: rgb(0, 0, 0); /* White text */
+	border: 1px solid black;
+    padding: 10px 10px; /* Adds padding */
+    cursor: pointer;
+	margin-top: 10px;
+	
+}
+
+footer {
+	margin-top: 50;
+	text-align: right;
+	padding-bottom: 100px;
+}
+
+footer p {
+	background-color: #d4e9e7;
+	padding-bottom: 20px;
+}
