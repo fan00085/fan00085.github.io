@@ -112,7 +112,6 @@ nav ul {
 	text-align: center;
 	text-transform: uppercase;
 	font-size: 30px;
-	display: float;
   	justify-content: space-between;
 }
 
@@ -199,7 +198,7 @@ button, input[type="submit"] {
 }
 
 footer {
-	margin-top: 50;
+	margin-top: 0px;
 	text-align: right;
 	padding-bottom: 100px;
 }
@@ -207,4 +206,5 @@ footer {
 footer p {
 	background-color: #d4e9e7;
 	padding-bottom: 20px;
+	padding-top: 20px;
 }
