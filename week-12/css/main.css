@@ -1,0 +1,353 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ----------------- My CSS -----------------*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: antiquewhite;
+}
+
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+img {
+    width: 100%;
+}
+
+h1, h2, h3 {
+  font-weight: bold;  
+}
+
+h1 {
+    font-size: 2rem;
+    /* 2 (16px) = 32px */
+    margin: 20px 0;
+    font-family: "Satisfy", cursive;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin: 20px 0;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-size: 1.2rem;
+    line-height: 1.3;
+    /* doesnt have a unit, it refers to the line height x the font size */
+}
+
+section {
+    padding: 30px 0;
+}
+
+/* -------- Header Section -------- */
+
+header .banner {
+    color: rgb(183, 203, 152);
+    padding: 100px;
+    background-image: url("images/white-kitty.jpg");
+    /* to leave the folder the css is currently in you need to type .. first i.e. "../images/white-kitty.jpg" */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header .banner .banner-info {
+    background-color: rgba(39, 43, 32, 0.704);
+    padding: 50px;
+    text-align: center;
+}
+
+.banner-info .gallery-btn {
+    background-color: rgb(183, 203, 152);
+    color: rgb(39, 43, 32);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px; 
+    /* makes edges round :-) */
+}
+
+.banner-info h1 {
+    font-size: 3rem;
+    margin-bottom: 50px;
+}
+
+header .banner {
+    text-align: center;
+}
+
+nav {
+    background-color: rgb(167, 196, 95);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav ul li a {
+    display: block;
+    color: rgb(39, 43, 32);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 18px 0;
+}
+
+nav ul li a:hover {
+    background-color: rgb(39, 43, 32);
+    color:rgb(167, 196, 95);
+}
+
+nav ul li a.current {
+    color:rgb(255, 216, 244)
+}
+
+/* --------- Story Section --------- */
+
+.story-section .content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 2vw;
+}
+
+/* --------- Values Section --------- */
+
+.values-section .value {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.values-section .value {
+    display: flex;
+    background-color: rgb(183, 203, 152);
+    padding: 20px;
+    gap: 10px;
+}
+
+.values-section .value h3 {
+    font-size: 1.25rem;
+}
+
+/* ----- Gallery Section ----- */
+
+.gallery-section .images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.gallery-section .images img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* ensures images cover the grid item area */
+}
+
+.gallery-section .images img:nth-child(3) {
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+}
+
+iframe {
+    width: 100%;
+    border: 0;
+}
+
+.gallery-section .videos iframe {
+    height: 60vh;
+    border: 0;
+}
+
+/* ----- Location Section ----- */
+.location-section .map iframe {
+    height: 400px;
+    border: 0;
+}
+
+footer {
+    background-color: rgb(39, 43, 32);
+    color:rgb(183, 203, 152);
+    padding: 30px 0;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-info .social-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.footer-info .social-icons a {
+    color: rgb(183, 203, 152);
+    font-size: 18px;
+}
+
+.footer-info .social-icons a:hover, .footer-info .social-icons a:focus {
+    color:rgb(255, 216, 244)
+}
+
+
+
+@media screen and (min-width: 720px) {
+    nav ul {
+        /* display: flex; */
+        flex-direction: row;
+    }
+
+    /* ----- Tablet: Story Section ----- */
+    .story-section .content {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .story-section .content img {
+        width: 300px;
+        height: auto;
+    }
+
+    /* ----- Tablet: Gallery Section ----- */
+    .gallery-section .images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-section .images img:nth-child(1) {
+        grid-column: 1 / 3;
+        grid-row: 1 / 3;
+    }   
+
+    .gallery-section .images img:nth-child(2) {
+        grid-column: 3 / 4;
+        grid-row: 1 / 3;
+    }
+
+    .gallery-section .images img:nth-child(3) {
+        grid-column: initial;
+        grid-row: initial;
+        /* reset values to their default values */
+    }
+    
+}
+
+@media screen and (min-width: 1080px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    h2 {
+        font-size: 2rem;
+    }
+    
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .values-section .value {
+        flex-direction: row;
+    }
+
+    /* ----- Desktop: Gallery Section */
+    .gallery-section .images {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .gallery-section .images img:nth-child(1) {
+        grid-column: initial;
+        grid-row: initial;
+    }   
+
+    .gallery-section .images img:nth-child(4) {
+        grid-column: 1 / span 2;
+        grid-row: 1 / span 2;
+    }
+
+    .gallery-section .images img:nth-child(3) {
+        grid-column: initial;
+        grid-row: initial;
+    }
+
+    .gallery-section .images img:nth-child(4) {
+        order: 5;
+        /* positive #s & negative #s 
+            order: 1 -> move the image to the right
+            order: -1 -> move the image to the left
+
+            The larger the value, the further it will be placed to the right. -> positive numbers
+            The smaller the value, the further it will be placed to the left.  -> negative numbers
+        */
+    }
+}
