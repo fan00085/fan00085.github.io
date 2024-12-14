@@ -314,13 +314,17 @@ footer {
     
     h3 {
         font-size: 1.75rem;
-    }
+    } 
 
     .values-section .value {
         flex-direction: row;
     }
 
     /* ----- Desktop: Gallery Section */
+    .wrapper {
+        display: flex;
+    }
+
     .gallery-section .images {
         grid-template-columns: repeat(3, 1fr);
     }

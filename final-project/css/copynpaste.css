@@ -66,6 +66,18 @@ h1 {
 	font-size: 3rem;
 }
 
+h2 {
+	font-size: 2rem;
+}
+
+h3 {
+	font-size: 1.5rem;
+}
+
+p {
+	font-size: .67rem;
+}
+
 /* - - - - - - - Navigation/Header - - - - - - - */
 .container {
 	max-width: 1200px;
@@ -122,34 +134,508 @@ nav ul li a.current {
 
 /* - - - - - - - Banner - - - - - - - */
 
-/* header .banner-info{
-    padding: 100px;
+header .banner .banner-info{
+    color: rgb(255, 255, 255);
+    padding-bottom: 10vh;
+	margin-bottom: 0cm;
     background-image: url("../images/main-banner.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+	position: relative;
+	padding-top: 1px;
+}
+
+.banner-info {
+	position: absolute;
+}
+
+.buble {
+	background-color: rgba(0, 0, 0, 0.5);
+	padding-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+	line-height: 10vh;
+	padding-left: 3vh;
+	margin-top: 70px;
+}
+
+
+/* h1 {
+	position: relative;
+	padding: 10vh 4vw;
+	font-size: 9vw;
+	color: white;
+	margin: 0px 10px;
+	padding-bottom: 10px;
+	line-height: 8.5vh;
 } */
 
-header .banner .banner-img {
-	width: 100%;
-	position: relative;
-}
-
-header .banner h1 {
-	position: absolute;
+.banner p {
 	color: white;
-	text-align: left;
+	margin: 0px 10px;
+	padding: 0 1vh 0;
+	line-height: 2vh;
 }
 
-header .banner .banner-info {
-	background-color: rgba(0, 0, 0, 0.5);
-	text-align: start;
+.connect-btn {
+	border: none;
+	font-size: 1rem;
+	margin: 3vh 3.2vw;
+	padding-top: 3vh;
 }
 
-.banner-info h1 {
-    font-size: 3rem;
-    margin-bottom: 50px;
+.bannerbtn {
+	background-color: #c78c06;
+	padding: 28px 20px;
+	text-decoration: none;
+	color: #222;
 }
 
+/* - - - - - - - About Us - - - - - - - */
 
-/* Colours values used in the layout #c78c06 orange, #ffe6ac light yellow, #222, #11253d blue and white */
+.wrapper {
+	max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-us {
+	background-color:#ffe6ac;
+	padding: 1.5vh;
+	padding-bottom: 3vh;
+}
+
+.about-us img {
+	width: 100%;
+}
+
+.about-us h2 {
+	padding-top: 3vh;
+	font-size: 2rem;
+	padding-bottom: 1vh;
+}
+
+.about-us p {
+	line-height: 15px;
+	padding-top: 10px;
+}
+
+/* - - - - - - - Our Services - - - - - - - */
+
+.services{
+	background-color: white;
+	padding: 1vh;
+}
+
+.services h2 {
+	margin-bottom: 1vh;
+	margin-top: 2vh;
+}
+
+.services img {
+	width: 100%;
+}
+
+/* - - - - - - - Digital Transformation - - - - - - - */
+
+.digital, .marketing, .video, .web-dev, .print {
+	background-color: #ffe6ac;
+	padding-bottom: 40px;
+	margin-bottom: 10px;
+}
+
+.digital h3 {
+	padding: 1.5vh;
+	padding-top: 3vh;
+}
+
+.digital p {
+	padding: 1.5vh;
+	line-height: 2vh;
+	margin-bottom: 3vh;
+}
+
+.digital a {
+	margin: 1.5vh;
+	background-color: #222;
+    color: white;
+    padding: 25px 25px; /* Adds padding */
+    cursor: pointer;
+	margin-top: 10px;
+}
+
+.digital i {
+	font-size: 20px;
+}
+
+/* - - - - - - - Marketing - - - - - - - */
+
+.marketing h3 {
+	padding: 1.5vh;
+	padding-top: 3vh;
+}
+
+.marketing p {
+	padding: 1.5vh;
+	line-height: 2vh;
+	margin-bottom: 3vh;
+}
+
+.marketing a {
+	margin: 1.5vh;
+	background-color: #222;
+    color: white;
+    padding: 25px 25px; /* Adds padding */
+    cursor: pointer;
+	margin-top: 10px;
+}
+
+.marketing i {
+	font-size: 20px;
+}
+
+/* - - - - - - - Video - - - - - - - */
+
+.video h3 {
+	padding: 1.5vh;
+	padding-top: 3vh;
+}
+
+.video p {
+	padding: 1.5vh;
+	line-height: 2vh;
+	margin-bottom: 3vh;
+}
+
+.video a {
+	margin: 1.5vh;
+	background-color: #222;
+    color: white;
+    padding: 25px 25px; /* Adds padding */
+    cursor: pointer;
+	margin-top: 10px;
+}
+
+.video i {
+	font-size: 20px;
+}
+
+/* - - - - - - - Wev Dev - - - - - - - */
+
+.web-dev h3 {
+	padding: 1.5vh;
+	padding-top: 3vh;
+}
+
+.web-dev p {
+	padding: 1.5vh;
+	line-height: 2vh;
+	margin-bottom: 3vh;
+}
+
+.web-dev a {
+	margin: 1.5vh;
+	background-color: #222;
+    color: white;
+    padding: 25px 25px; /* Adds padding */
+    cursor: pointer;
+	margin-top: 10px;
+}
+
+.web-dev i {
+	font-size: 20px;
+}
+
+/* - - - - - - - Print - - - - - - - */
+
+.print h3 {
+	padding: 1.5vh;
+	padding-top: 3vh;
+}
+
+.print p {
+	padding: 1.5vh;
+	line-height: 2vh;
+	margin-bottom: 3vh;
+}
+
+.print a {
+	margin: 1.5vh;
+	background-color: #222;
+    color: white;
+    padding: 25px 25px; /* Adds padding */
+    cursor: pointer;
+	margin-top: 10px;
+}
+
+.print i {
+	font-size: 20px;
+}
+
+.print {
+	margin-bottom: 10px;
+}
+
+/* - - - - - - - Our Vision - - - - - - - */
+
+.our-vision {
+    color: rgb(255, 255, 255);
+    padding-bottom: 12vh;
+    background-image: url("../images/vision.jpg");
+    /* to leave the folder the css is currently in you need to type .. first i.e. "../images/white-kitty.jpg" */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	position: relative;
+	background-color: rgb(255, 255, 255);
+}
+
+.our-vision h3 {
+padding: 8px;
+padding-top: 30px;
+}
+
+.our-vision p {
+	line-height: 2vh;
+	padding: 8px;
+}
+
+.our-vision a {
+	position: absolute;
+	margin: 8px;
+	background-color: #000000a3;
+	border: solid 1px#c78c06;
+    color: white;
+    padding: 25px 25px; /* Adds padding */
+    cursor: pointer;
+}
+
+.print i {
+	font-size: 20px;
+}
+
+/* - - - - - - - Our Team - - - - - - - */
+
+.team {
+	background-color: rgb(255, 255, 255);
+	padding: 1.5vh;
+	padding-top: 30px;
+}
+
+.team h2 {
+	margin-bottom: 10px;
+}
+
+.team h3 {
+	margin-bottom: 15px;
+	margin: 10px;
+}
+
+.team h4 {
+	font-size: 1.4vh;
+	font-weight: bolder;
+	margin: 10px;
+	line-height: 2vh;
+	border-bottom: solid 2px #c78c06;
+}
+
+.team img {
+	width: 100%;
+}
+
+.john-doe {
+	background-color: #ffe6ac;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.john-doe p {
+	line-height: 2vh;
+	margin: 10px;
+}
+
+.bob-rite {
+	background-color: #ffe6ac;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.bob-rite p {
+	line-height: 2vh;
+	margin: 10px;
+}
+
+/* - - - - - - - Contact Us - - - - - - - */
+
+.contact-us, .hours-of-operation, .location-section {
+	background-color: white;
+	padding: 10px;
+	font-size: .67rem;
+}
+
+.contact-us h2 {
+	padding-bottom: 20px;
+	padding-top: 20px
+}
+
+.contact-us h3 {
+	padding-bottom: 10px;
+}
+
+.name, .email, .message {
+	padding-bottom: 10px;
+}
+
+.contact-form input, textarea {
+	margin-top: 5px;
+}
+
+.name input, .email input {
+	width: 100%;
+	padding: 7px;
+}
+
+.contact-form textarea {
+	width: 100%;
+	height: 150px;
+	resize: none;
+}
+
+.contact-form input[type="submit"] {
+	background-color: #222;
+    color: #c78c06;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+/* - - - - - - - Hours of operation - - - - - - - */
+
+table, th, td {
+	border: 1px solid black;
+	font-size: .67rem;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+thead {
+	background-color: #ffe6ac;
+}
+
+table {
+	width: 100%;
+}
+
+/* - - - - - - - Location - - - - - - - */
+
+.location-section .map iframe {
+    height: 350px;
+	width: 100%;
+    border: 0;
+}
+
+/* - - - - - - - Footer - - - - - - - */
+ footer {
+	padding: 10px;
+ }
+
+ footer p {
+	font-size: .67rem;
+	color: #c78c06;
+	line-height: 4vh;
+ }
+
+ footer p a {
+	color: #c78c06;
+ }
+
+ /* - - - - - - - Desktop - - - - - - - */
+
+ @media screen and (min-width: 760px) {
+
+	h1 {
+		font-size: 3.5rem;
+	}
+	
+	h2 {
+		font-size: 2.5rem;
+	}
+	
+	h3 {
+		font-size: 2rem;
+	}
+	
+	p {
+		font-size: 1.17rem;
+	}
+
+	body {
+		background-color: white;
+	}
+
+	.logo-img {
+		width: 30px;
+		max-height: 50px;
+	}
+
+	header {
+		background-color: #222;
+	}
+
+	/* - - - - - Nav - - - - - */
+	nav ul {
+		margin-left: 150px;
+		flex-direction: row;
+	}
+
+	nav ul li {
+		padding: 0px;	
+	}
+
+	.form-search {
+		align-items: end;
+		display: flex;
+	}
+	
+	.form-search input {
+		align-items: end;
+		width: 100%;
+		padding: 7px 10px;
+		margin-left: 100%;
+	}
+	
+	.form-search button {
+		align-items: end;
+	}
+
+	/* - - - - - Banner - - - - - */
+
+
+	body {
+		background-size: 3vh;
+		width: 100%;
+		height: 300px;
+	}
+
+	.buble {
+		padding-bottom: 20px;
+		margin-left: 90px;
+		margin-right: 90px;
+	}
+
+	h1 {
+		font-size: 3rem;
+	}
+
+	/* - - - - - bam - - - - - */
+	.about-us img {
+		width: 500px;
+	}
+
+	.about-us {
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: space-between;
+	}
+ }
