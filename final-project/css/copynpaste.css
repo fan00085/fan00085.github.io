@@ -130,6 +130,7 @@ nav ul li a.current {
 	width: 6%;
 	height: 34px;
 	font-size: 2.5vh;
+	cursor: pointer;
 }
 
 /* - - - - - - - Banner - - - - - - - */
@@ -161,17 +162,6 @@ h1 {
 	padding-left: 3vh;
 	margin-top: 70px;
 }
-
-
-/* h1 {
-	position: relative;
-	padding: 10vh 4vw;
-	font-size: 9vw;
-	color: white;
-	margin: 0px 10px;
-	padding-bottom: 10px;
-	line-height: 8.5vh;
-} */
 
 .banner p {
 	color: white;
@@ -666,23 +656,66 @@ table {
 
 	/* - - - - - About Us - - - - - */
 
-	.about-us {
-	background-color: #ffe6ac;
-	padding-top: 20px;
+	.ketchup {
+		padding-top: 10px;
+		background-color: #ffe6ac;
+		padding-bottom: 20px;
 	}
-
-	.about-us img {
-		margin-left: 100px;
-		width: 500px;
-		margin-left: ;
-	}
+    .about-us img {
+		float: left;
+		margin-left: 150px;
+		margin-right: 20px;
+        width: 600px;
+        height: auto;
+    }
 
 	.about-us p {
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
+		max-width: 1300px;
+		flex-wrap: wrap;
+		line-height: 25px;
 	}
 
 	/* - - - - - Our Services - - - - - */
+	
+	.services h2 {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
 
+	.services-content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.services-content p {
+		line-height: 25px;		
+	}
+
+	.digital {
+		flex-basis: 48.5%;
+		margin-right: .5%;
+	}
+
+	.marketing {
+		flex-basis: 48.5%;
+		margin-left: .5%;
+	}
+
+	.video {
+		margin-right: .5%;
+		flex-basis: 32%;
+	}
+
+	.web-dev {
+		margin-left: .5%;
+		margin-right: .5%;
+		flex-basis: 32%;
+
+	}
+
+	.print {
+		margin-left: .5%;
+		flex-basis: 32%;
+
+	}
  }
