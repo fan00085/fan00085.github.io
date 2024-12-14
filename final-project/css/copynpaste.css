@@ -379,12 +379,11 @@ h1 {
     background-repeat: no-repeat;
     background-position: center;
 	position: relative;
-	background-color: rgb(255, 255, 255);
 }
 
 .our-vision h3 {
-padding: 8px;
-padding-top: 30px;
+	padding: 8px;
+	padding-top: 30px;
 }
 
 .our-vision p {
@@ -599,7 +598,7 @@ table {
 	}
 
 	.form-search {
-		align-items: right;
+		align-items: end;
 		justify-content: flex-end;
 		align-self: baseline;
 	}
@@ -608,7 +607,6 @@ table {
 		align-items: end;
 		width: 100%;
 		padding: 7px 10px;
-		margin-left: %;
 	}
 	
 	.form-search button {
@@ -645,7 +643,7 @@ table {
 	}
 
 	.connect-btn {
-		font-size: 30px;
+		font-size: 25px;
 		margin-left: 30px;
 		margin-top: 50px;
 	}
@@ -696,14 +694,29 @@ table {
 		margin-right: .5%;
 	}
 
+	.digital a {
+		padding: 25px 195px; 
+		font-size: 25px;
+	}
+
 	.marketing {
 		flex-basis: 48.5%;
 		margin-left: .5%;
 	}
 
+	.marketing a {
+		padding: 25px 174px; 
+		font-size: 25px;
+	}
+
 	.video {
 		margin-right: .5%;
 		flex-basis: 32%;
+	}
+
+	.video a {
+		padding: 25px 103px; 
+		font-size: 25px;
 	}
 
 	.web-dev {
@@ -713,9 +726,124 @@ table {
 
 	}
 
+	.web-dev a {
+		padding: 25px 109px; 
+		font-size: 25px;
+	}
+
 	.print {
 		margin-left: .5%;
 		flex-basis: 32%;
 
 	}
+
+	.print a {
+		padding: 25px 107px; 
+		font-size: 25px;
+	}
+
+	/* - - - - - Vision - - - - - */
+	
+	.our-vision {
+		margin-top: 20px;
+		padding-bottom: 150px;
+	}
+
+	.our-vision h3{
+		margin-left: 157px;
+	}
+
+	.our-vision p {
+		max-width: 1200px;
+		margin-top: 30px;
+		margin-left: 157px;
+		line-height: 25px;
+	}
+	
+	.our-vision a {
+		margin-left: 157px;
+		padding: 40px 107px; 
+		font-size: 25px;
+	}
+
+	/* - - - - - Our Team - - - - - */
+	
+	.team h2{
+		margin-bottom: 20px;
+	}
+
+	.john-doe {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 0;
+	}
+
+	.john-doe .john-content {
+		margin-top: 20px;
+	}
+
+	.john-doe .john-content p {
+		margin-top: 20px;
+		line-height: 25px;
+	}
+
+	.bob-rite {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bob-content {
+		order: 3;
+	}
+
+	.bob-img {
+		order: 4;
+	}
+
+	.bob-rite .bob-content p {
+		margin-top: 20px;
+		line-height: 25px;
+	}
+
+	/* - - - - - Contact Us - - - - - */
+
+	.contact-content{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.location-section {
+		margin-top: 80px;
+		order: 2;
+	}
+
+	.hours-of-operation {
+		order: 3;
+	}
+
+	table, th, td {
+		font-size: 1.17rem;
+		padding: 20px;
+		margin-top: 10px;
+	}
+
+
+	.hours-of-operation {
+		grid-column: span 2;
+	}
+
+	/* - - - - - Footer - - - - - */
+
+	footer {
+		background-color: #222;
+		padding-bottom: 40px;
+	}
+
+	footer p {
+		margin-left: 155px;
+		font-size: 1.17rem;
+		line-height: 25px;
+		margin-top: 20px;
+	}
+
  }

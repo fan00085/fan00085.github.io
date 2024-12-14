@@ -70,8 +70,12 @@ h2 {
 	font-size: 2rem;
 }
 
+h3 {
+	font-size: 1.5rem;
+}
+
 p {
-	font-size: 1.4vh;
+	font-size: .67rem;
 }
 
 /* - - - - - - - Navigation/Header - - - - - - - */
@@ -126,28 +130,37 @@ nav ul li a.current {
 	width: 6%;
 	height: 34px;
 	font-size: 2.5vh;
+	cursor: pointer;
 }
 
 /* - - - - - - - Banner - - - - - - - */
 
-.banner {
-    position: relative;
-    max-width: 1200px;
-    width: 100%;
+header .banner .banner-info{
+    color: rgb(255, 255, 255);
+    padding-bottom: 10vh;
+	margin-bottom: 0cm;
+    background-image: url("../images/main-banner.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	position: relative;
+	padding-top: 1px;
 }
 
 .banner-info {
-    top: 6vh;
-    position: absolute;
+	position: absolute;
+}
+
+.buble {
 	background-color: rgba(0, 0, 0, 0.5);
 	padding-bottom: 20px;
 }
 
 h1 {
-	font-size: 9vw;
-	color: white;
-	margin: 0px 10px;
-	line-height: 8.5vh;
+    font-size: 3rem;
+	line-height: 10vh;
+	padding-left: 3vh;
+	margin-top: 70px;
 }
 
 .banner p {
@@ -206,12 +219,8 @@ h1 {
 	padding: 1vh;
 }
 
-.services h3 {
-	font-size: 1.5rem;
-}
-
 .services h2 {
-	margin-bottom: 2vh;
+	margin-bottom: 1vh;
 	margin-top: 2vh;
 }
 
@@ -224,6 +233,7 @@ h1 {
 .digital, .marketing, .video, .web-dev, .print {
 	background-color: #ffe6ac;
 	padding-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 .digital h3 {
@@ -354,10 +364,486 @@ h1 {
 	font-size: 20px;
 }
 
+.print {
+	margin-bottom: 10px;
+}
+
 /* - - - - - - - Our Vision - - - - - - - */
 
-.our-vision img {
+.our-vision {
+    color: rgb(255, 255, 255);
+    padding-bottom: 12vh;
+    background-image: url("../images/vision.jpg");
+    /* to leave the folder the css is currently in you need to type .. first i.e. "../images/white-kitty.jpg" */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+	position: relative;
+}
+
+.our-vision h3 {
+	padding: 8px;
+	padding-top: 30px;
+}
+
+.our-vision p {
+	line-height: 2vh;
+	padding: 8px;
+}
+
+.our-vision a {
+	position: absolute;
+	margin: 8px;
+	background-color: #000000a3;
+	border: solid 1px#c78c06;
+    color: white;
+    padding: 25px 25px; /* Adds padding */
+    cursor: pointer;
+}
+
+.print i {
+	font-size: 20px;
+}
+
+/* - - - - - - - Our Team - - - - - - - */
+
+.team {
+	background-color: rgb(255, 255, 255);
+	padding: 1.5vh;
+	padding-top: 30px;
+}
+
+.team h2 {
+	margin-bottom: 10px;
+}
+
+.team h3 {
+	margin-bottom: 15px;
+	margin: 10px;
+}
+
+.team h4 {
+	font-size: 1.4vh;
+	font-weight: bolder;
+	margin: 10px;
+	line-height: 2vh;
+	border-bottom: solid 2px #c78c06;
+}
+
+.team img {
 	width: 100%;
 }
 
-/* Colours values used in the layout #c78c06 orange, #ffe6ac light yellow, #222, #11253d blue and white */
+.john-doe {
+	background-color: #ffe6ac;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.john-doe p {
+	line-height: 2vh;
+	margin: 10px;
+}
+
+.bob-rite {
+	background-color: #ffe6ac;
+	padding-bottom: 5px;
+	margin-bottom: 10px;
+}
+
+.bob-rite p {
+	line-height: 2vh;
+	margin: 10px;
+}
+
+/* - - - - - - - Contact Us - - - - - - - */
+
+.contact-us, .hours-of-operation, .location-section {
+	background-color: white;
+	padding: 10px;
+	font-size: .67rem;
+}
+
+.contact-us h2 {
+	padding-bottom: 20px;
+	padding-top: 20px
+}
+
+.contact-us h3 {
+	padding-bottom: 10px;
+}
+
+.name, .email, .message {
+	padding-bottom: 10px;
+}
+
+.contact-form input, textarea {
+	margin-top: 5px;
+}
+
+.name input, .email input {
+	width: 100%;
+	padding: 7px;
+}
+
+.contact-form textarea {
+	width: 100%;
+	height: 150px;
+	resize: none;
+}
+
+.contact-form input[type="submit"] {
+	background-color: #222;
+    color: #c78c06;
+    padding: 5px 5px;
+    cursor: pointer;
+}
+
+/* - - - - - - - Hours of operation - - - - - - - */
+
+table, th, td {
+	border: 1px solid black;
+	font-size: .67rem;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+thead {
+	background-color: #ffe6ac;
+}
+
+table {
+	width: 100%;
+}
+
+/* - - - - - - - Location - - - - - - - */
+
+.location-section .map iframe {
+    height: 350px;
+	width: 100%;
+    border: 0;
+}
+
+/* - - - - - - - Footer - - - - - - - */
+ footer {
+	padding: 10px;
+ }
+
+ footer p {
+	font-size: .67rem;
+	color: #c78c06;
+	line-height: 4vh;
+ }
+
+ footer p a {
+	color: #c78c06;
+ }
+
+ /* - - - - - - - Desktop - - - - - - - */
+
+ @media screen and (min-width: 760px) {
+
+	h1 {
+		font-size: 3.5rem;
+	}
+	
+	h2 {
+		font-size: 2.5rem;
+	}
+	
+	h3 {
+		font-size: 2rem;
+	}
+	
+	p {
+		font-size: 1.17rem;
+	}
+
+	body {
+		background-color: white;
+	}
+
+	/* - - - - - Header - - - - - */
+
+	.container {
+		display: flex;
+	}
+	
+	.logo-img {
+		display: flex;
+		float: left;
+		align-self: flex-start;
+		max-height: 110px;
+		position: relative;
+		margin-top: 30px;
+	}
+
+	header {
+		background-color: #222;
+	}
+
+	/* - - - - - Nav - - - - - */
+
+	nav ul {
+		align-self: baseline;
+		margin-top: 50px;
+		margin-left: 50px;
+		flex-direction: row;
+		list-style: none;
+		width: 90%;
+	}
+
+	nav ul li {
+		padding: 0px;
+	}
+
+	.form-search {
+		align-items: end;
+		justify-content: flex-end;
+		align-self: baseline;
+	}
+	
+	.form-search input {
+		align-items: end;
+		width: 100%;
+		padding: 7px 10px;
+	}
+	
+	.form-search button {
+		align-items: end;
+		width: 40px;
+	}
+
+	/* - - - - - Banner - - - - - */
+
+	header .banner .banner-info {
+		margin-top: 30px;
+		height: 2vh;
+		padding-bottom: 600px;
+	}
+
+	.buble {
+		padding-bottom: 50px;
+		margin-left: 90px;
+		margin-right: 90px;
+		position: absolute;
+		margin-top: 50px;
+	}
+
+	h1 {
+		font-size: 6rem;
+		line-height: 15vh;
+		margin-top: 25px;
+	}
+
+	.banner p {
+		margin-top: 20px;
+		line-height: 30px;
+		margin-left: 22px;
+	}
+
+	.connect-btn {
+		font-size: 25px;
+		margin-left: 30px;
+		margin-top: 50px;
+	}
+
+	.connect-btn a {
+		padding: 40px;
+	}
+
+	/* - - - - - About Us - - - - - */
+
+	.ketchup {
+		padding-top: 10px;
+		background-color: #ffe6ac;
+		padding-bottom: 20px;
+	}
+    .about-us img {
+		float: left;
+		margin-left: 150px;
+		margin-right: 20px;
+        width: 600px;
+        height: auto;
+    }
+
+	.about-us p {
+		max-width: 1300px;
+		flex-wrap: wrap;
+		line-height: 25px;
+	}
+
+	/* - - - - - Our Services - - - - - */
+	
+	.services h2 {
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+
+	.services-content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.services-content p {
+		line-height: 25px;		
+	}
+
+	.digital {
+		flex-basis: 48.5%;
+		margin-right: .5%;
+	}
+
+	.digital a {
+		padding: 25px 195px; 
+		font-size: 25px;
+	}
+
+	.marketing {
+		flex-basis: 48.5%;
+		margin-left: .5%;
+	}
+
+	.marketing a {
+		padding: 25px 174px; 
+		font-size: 25px;
+	}
+
+	.video {
+		margin-right: .5%;
+		flex-basis: 32%;
+	}
+
+	.video a {
+		padding: 25px 103px; 
+		font-size: 25px;
+	}
+
+	.web-dev {
+		margin-left: .5%;
+		margin-right: .5%;
+		flex-basis: 32%;
+
+	}
+
+	.web-dev a {
+		padding: 25px 109px; 
+		font-size: 25px;
+	}
+
+	.print {
+		margin-left: .5%;
+		flex-basis: 32%;
+
+	}
+
+	.print a {
+		padding: 25px 107px; 
+		font-size: 25px;
+	}
+
+	/* - - - - - Vision - - - - - */
+	
+	.our-vision {
+		margin-top: 20px;
+		padding-bottom: 150px;
+	}
+
+	.our-vision h3{
+		margin-left: 157px;
+	}
+
+	.our-vision p {
+		max-width: 1200px;
+		margin-top: 30px;
+		margin-left: 157px;
+		line-height: 25px;
+	}
+	
+	.our-vision a {
+		margin-left: 157px;
+		padding: 40px 107px; 
+		font-size: 25px;
+	}
+
+	/* - - - - - Our Team - - - - - */
+	
+	.team h2{
+		margin-bottom: 20px;
+	}
+
+	.john-doe {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		margin-bottom: 0;
+	}
+
+	.john-doe .john-content {
+		margin-top: 20px;
+	}
+
+	.john-doe .john-content p {
+		margin-top: 20px;
+		line-height: 25px;
+	}
+
+	.bob-rite {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.bob-content {
+		order: 3;
+	}
+
+	.bob-img {
+		order: 4;
+	}
+
+	.bob-rite .bob-content p {
+		margin-top: 20px;
+		line-height: 25px;
+	}
+
+	/* - - - - - Contact Us - - - - - */
+
+	.contact-content{
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	.location-section {
+		margin-top: 80px;
+		order: 2;
+	}
+
+	.hours-of-operation {
+		order: 3;
+	}
+
+	table, th, td {
+		font-size: 1.17rem;
+		padding: 20px;
+		margin-top: 10px;
+	}
+
+
+	.hours-of-operation {
+		grid-column: span 2;
+	}
+
+	/* - - - - - Footer - - - - - */
+
+	footer {
+		background-color: #222;
+		padding-bottom: 40px;
+	}
+
+	footer p {
+		margin-left: 155px;
+		font-size: 1.17rem;
+		line-height: 25px;
+		margin-top: 20px;
+	}
+
+ }

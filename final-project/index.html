@@ -11,7 +11,7 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/5613cb4016.js" crossorigin="anonymous"></script>
     <!-- css -->
-    <link rel="stylesheet" href="css/copynpaste.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
@@ -101,84 +101,94 @@
                     </div>
                 </div>
             </section>
+        </div>
             
             <section class="our-vision">
-                <div class="winter">
                     <h3>Our Vision</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, cumque ex eligendi nobis alias optio eos corporis. Voluptatum odio, aperiam facere quasi sit minima unde natus rem. Atque, veritatis obcaecati!</p>
                     <a>Learn More <i class="fa-solid fa-caret-right"></i></a>
-                </div>
             </section>
-
+            
+        <div class="wrapper">
             <section class="team" id="team">
                 <h2>Our Team</h2>
                 <div class="john-doe">
-                    <img src="images/john.jpg" alt="John Doe">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident neque dolores eligendi, unde ratione autem quod quasi ipsam quas sint impedit, at aliquam rem, minus expedita aliquid natus commodi nobis?</p>
+                    <div class="john-img">
+                        <img src="images/john.jpg" alt="John Doe">
+                    </div>
+                    <div class="john-content">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident neque dolores eligendi, unde ratione autem quod quasi ipsam quas sint impedit, at aliquam rem, minus expedita aliquid natus commodi nobis?</p>
+                    </div>
                 </div>
 
                 <div class="bob-rite">
-                    <img src="images/bob.jpg" alt="Bob Rite">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fugiat rerum molestias eligendi officiis quod debitis, eum commodi itaque delectus hic odit amet velit ratione doloribus numquam laborum animi eveniet.</p>
+                    <div class="bob-img">
+                        <img src="images/bob.jpg" alt="Bob Rite">
+                    </div>
+                    <div class="bob-content">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit fugiat rerum molestias eligendi officiis quod debitis, eum commodi itaque delectus hic odit amet velit ratione doloribus numquam laborum animi eveniet.</p>
+                    </div>
                 </div>
             </section>
 
-            <section class="contact-us" id="contact-us">
-                <h2>Contact Us</h2>
-                <h3>Send us a message</h3>
-                <form class="contact-form">
-                    <div class="name">
-                        <label for="name">Full Name</label><br>
-                        <input type="text" name="name" id="name">
+            <div class="contact-content">
+                <section class="contact-us" id="contact-us">
+                    <h2>Contact Us</h2>
+                    <h3>Send us a message</h3>
+                    <form class="contact-form">
+                        <div class="name">
+                            <label for="name">Full Name</label><br>
+                            <input type="text" name="name" id="name">
+                        </div>
+
+                        <div class="email">
+                            <label for="email">Email</label><br>
+                            <input type="email" name="email" id="email">
+                        </div>
+
+                        <div class="message">
+                            <label for="name">Message</label><br>
+                            <textarea name="message" id="message" cols="60" rows="10"></textarea>
+                        </div>
+                        <input type="submit" value="Send">
+                    </form>
+                </section> 
+
+                <section class="hours-of-operation">
+                    <h3>Hours of operation</h3>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Days</th>
+                                <th>Hours</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Monday - Friday</td>
+                                <td>9 AM - 6 PM</td>
+                            </tr>
+
+                            <tr>
+                                <td>Saturday - Sunday</td>
+                                <td>Closed</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="location-section">
+                    <h3>Location</h3>
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89726.36301936627!2d-75.90780450273436!3d45.34984490000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732862068292!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-
-                    <div class="email">
-                        <label for="email">Email</label><br>
-                        <input type="email" name="email" id="email">
-                    </div>
-
-                    <div class="message">
-                        <label for="name">Message</label><br>
-                        <textarea name="message" id="message" cols="60" rows="10"></textarea>
-                    </div>
-                    <input type="submit" value="Send">
-                </form>
-            </section> 
-
-            <section class="hours-of-operation">
-                <h3>Hours of operation</h3>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Days</th>
-                            <th>Hours</th>
-                        </tr>
-                    </thead>
-
-                    <tbody>
-                        <tr>
-                            <td>Monday - Friday</td>
-                            <td>9 AM - 6 PM</td>
-                        </tr>
-
-                        <tr>
-                            <td>Saturday - Sunday</td>
-                            <td>Closed</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-
-            <section class="location-section">
-                <h3>Location</h3>
-                <div class="map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d89726.36301936627!2d-75.90780450273436!3d45.34984490000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce0718cc4a6ad7%3A0xc6cc467725843e2b!2sAlgonquin%20College%20-%20Ottawa%20Campus!5e0!3m2!1sen!2sca!4v1732862068292!5m2!1sen!2sca" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </section>
+                </section>
+            </div>
         </div>
     </main>
 
